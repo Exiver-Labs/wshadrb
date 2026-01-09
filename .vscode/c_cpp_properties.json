@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "name": "ESP32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${env:HOME}/.arduino15/packages/esp32/hardware/esp32/*/cores/esp32/**",
+        "${env:HOME}/.arduino15/packages/esp32/hardware/esp32/*/variants/esp32/**",
+        "${env:HOME}/.arduino15/packages/esp32/tools/**/xtensa-esp32-elf/include/**",
+        "${env:HOME}/Arduino/libraries/**",
+        "${env:HOME}/.arduino15/packages/esp32/hardware/esp32/*/libraries/**"
+      ],
+      "defines": [
+        "ARDUINO=10819",
+        "ARDUINO_ESP32_DEV",
+        "ARDUINO_ARCH_ESP32",
+        "ESP32",
+        "F_CPU=240000000L",
+        "ARDUINO_ESP32_DEV",
+        "ARDUINO_BOARD=\"ESP32 Dev Module\"",
+        "ARDUINO_BOARD_ID=\"ESP32 Dev Module\""
+      ],
+      "compilerPath": "${env:HOME}/.arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/*/bin/xtensa-esp32-elf-g++",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "gcc-x64",
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "${env:HOME}/.arduino15/packages/esp32/hardware/esp32/*"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
+}

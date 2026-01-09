@@ -1,0 +1,22 @@
+[
+  {
+    "key": "ctrl+alt+b",
+    "command": "workbench.action.tasks.build",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "ctrl+alt+u",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Arduino: Upload"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Arduino: Monitor Serial"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Arduino: Compile"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "arduino.path": "/usr/bin",
+  "arduino.commandPath": "arduino-cli",
+  "arduino.defaultBaudRate": 115200,
+  "arduino.logLevel": "info",
+  "files.associations": {
+    "*.ino": "cpp"
+  },
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.errorSquiggles": "enabled"
+}

@@ -1,0 +1,38 @@
+# Arduino build artifacts
+build/
+*.hex
+*.elf
+*.bin
+*.map
+
+# Arduino CLI binary (downloaded by setup script)
+bin/
+
+# Arduino IDE files
+*.prefs
+
+# VS Code / Cursor
+.vscode/launch.json
+.vscode/.cortex/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.cache

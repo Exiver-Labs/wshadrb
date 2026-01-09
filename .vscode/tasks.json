@@ -1,0 +1,84 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Arduino: Compile",
+      "type": "shell",
+      "command": "${workspaceFolder}/find-arduino-cli.sh",
+      "args": [
+        "compile",
+        "--fqbn",
+        "esp32:esp32:esp32",
+        "--build-path",
+        "${workspaceFolder}/build",
+        "${workspaceFolder}/wshadrb.ino"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Arduino: Upload",
+      "type": "shell",
+      "command": "${workspaceFolder}/find-arduino-cli.sh",
+      "args": [
+        "upload",
+        "-p",
+        "/dev/ttyACM0",
+        "--fqbn",
+        "esp32:esp32:esp32",
+        "--input-dir",
+        "${workspaceFolder}/build",
+        "${workspaceFolder}/wshadrb.ino"
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": [],
+      "dependsOn": "Arduino: Compile"
+    },
+    {
+      "label": "Arduino: Compile and Upload",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Arduino: Compile",
+        "Arduino: Upload"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Arduino: Monitor Serial",
+      "type": "shell",
+      "command": "${workspaceFolder}/find-arduino-cli.sh",
+      "args": [
+        "monitor",
+        "-p",
+        "/dev/ttyACM0",
+        "-c",
+        "baudrate=115200"
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
