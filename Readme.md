@@ -228,7 +228,17 @@ For more detailed troubleshooting, see the [Setup Guide](docs/setup-guide.md).
 
 ## License
 
-This project is provided as-is for educational and development purposes.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+**What this means for you:**
+- ✅ **Use freely**: Personal or commercial projects
+- ✅ **Modify**: Change anything you want
+- ✅ **Distribute**: Share with others
+- ✅ **Sell**: Make money from products using this code
+- ✅ **No attribution required** (though appreciated!)
+
+**No restrictions, no royalties, completely free!** 🎉
+
 
 ## Support
 
@@ -244,6 +254,13 @@ For issues:
 - Basic test patterns and display functionality
 - Complete documentation
 - Connection schematics
+
+## Acknowledgments
+
+- **Waveshare** for the E-Paper HAT and ESP32 Driver Board
+- **[GxEPD2 Library](https://github.com/ZinggJM/GxEPD2)** by Jean-Marc Zingg
+- **ESP32 Arduino Core** by Espressif Systems
+
 
 ---
 
